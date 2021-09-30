@@ -1,2 +1,2 @@
 # side-projects
-Side projects not immediately related to my college course. 
+This repository contains side projects not immediately related to my college course. 
