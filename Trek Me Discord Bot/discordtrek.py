@@ -16,7 +16,7 @@ def trek():
 @client.event
 async def on_message(message):
     #This will DM you anywhere
-    if message.content.startswith("$trekme"):
+    if message.content.startswith("$trekme") or message.content.startswith("$trek me"):
         await message.channel.send(trek())
     
 #Makes the bot online
