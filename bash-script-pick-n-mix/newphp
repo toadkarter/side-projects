@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ $# != 1 ]
+then
+    echo "Sorry, there is a parameters problem" >&2
+    exit 1
+else
+    filename="$1.php"
+    sudo touch /opt/lampp/htdocs/phpscripts/"$filename"
+    code -n /opt/lampp/htdocs/phpscripts/"$filename"
+fi

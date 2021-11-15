@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ $# != 1 ]
+then
+    echo "Sorry, there is a parameters problem" >&2
+    exit 1
+else
+    touch /home/toadkarter/bin/"$1"
+    chmod u+x /home/toadkarter/bin/"$1"
+    code -n /home/toadkarter/bin/"$1"
+fi

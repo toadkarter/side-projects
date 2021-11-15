@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ $# != 1 ]
+then
+    echo "Sorry, there is a parameters problem" >&2
+    exit 1
+else
+    sudo /opt/lampp/lampp "$1"
+    if [ "$1" == "start" ]
+    then
+        google-chrome-stable --disable-gpu --disable-software-rasterizer localhost/phpmyadmin/
+    fi
+fi
