@@ -27,6 +27,10 @@ ___
 
 This script just runs a few standard update commands on my machine. It is called mintupdate because I am currently using Linux Mint as my OS :-) 
 
+## jupyternew
+
+This script works with a file titled "defaultjupter", which I have saved in my Documents folder. This file contains the default JSON data required for a Jupyter Notebook file. The file is copied to the working directory, name changed to user input with the correct extension, and opened in VS Code. 
+
 ___
 ## starwarsascii
 

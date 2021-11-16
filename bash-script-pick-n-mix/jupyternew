@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ $# != 1 ]
+then
+    echo "Sorry, there is a parameters problem" >&2
+    exit 1
+else
+
+cp /home/toadkarter/Documents/defaultjupyter "$PWD"
+mv defaultjupyter "$1".ipynb | code -n
+code -n "$1".ipynb
+
+fi
